@@ -1,5 +1,4 @@
-a=0
+from pymongo import MongoClient
 
-for idx in range(1,100):
-    a+=idx
-    print(a)
+client = MongoClient('localhost', 27017)
+db = client.dbsparta.drop()
